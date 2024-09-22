@@ -8,20 +8,20 @@ export default function Homepage() {
             <div className="container mx-auto p-4 flex xl:pl-32 flex-col lg:flex-row relative z-10">
                 {/* Aside Kiri: Penyambutan */}
                 <aside className="lg:w-1/2 p-4">
-                    <h1 className="text-4xl font-bold mb-4 text-slate-200">Selamat Datang di Desa <span className='text-sky-600'>Sitemu</span></h1>
-                    <p className="mb-4 text-slate-400">
+                    <h1 className="text-4xl font-bold mb-4 dark:text-white">Selamat Datang di Desa <span className='text-sky-600'>Sitemu</span></h1>
+                    <p className="mb-4 dark:text-slate-400">
                         Desa Sitemu adalah desa yang kaya akan budaya dan tradisi. Kami berkomitmen untuk
                         memberikan layanan terbaik bagi warga dan pengunjung. Temukan berbagai informasi
                         mengenai desa kami di sini.
                     </p>
-                    <p className="mb-4 text-slate-400">
+                    <p className="mb-4 dark:text-slate-400">
                         Kami memiliki berbagai program dan layanan untuk mendukung masyarakat. Silakan
                         menjelajahi situs kami untuk mengetahui lebih lanjut.
                     </p>
-                    <a className="btn btn-active">
-                    <BsTelephoneFill fill='#0ea5e9' />
-                    Hubungi Kami
-                </a>
+                    <a className="btn hover:bg-transparent hover:border-none hover:scale-1 shadow-[1px_2px_0px_rgba(14,165,233,0.5)]">
+                        <BsTelephoneFill className='bg-transparent' fill='#0ea5e9' />
+                        Hubungi Kami
+                    </a>
                 </aside>
 
                 {/* Aside Kanan: Ilustrasi */}

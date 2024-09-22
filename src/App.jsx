@@ -10,6 +10,7 @@ import HalloBupatiPage from './pages/HalloBupatiPage';
 import TupoksiPage from './pages/TupoksiPage';
 import PelayananAdministrasiPage from './pages/PelayananAdministrasiPage';
 import LoadingSpinner from './components/LoadingSpinner';
+import StrukturOrganisasi from './pages/StruktureOrganization';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -34,6 +35,7 @@ function App() {
           <Route path="/" element={<ContentPage />} />
           <Route path="/kontak" element={<Kontak />} />
           <Route path="/visi-misi" element={<VisidanMisi />} />
+          <Route path="/struktur-organisasi" element={<StrukturOrganisasi />} />
           <Route path="/prestasi" element={<PrestasiPage />} />
           <Route path="/tupoksi" element={<TupoksiPage />} />
           <Route path="/layanan-administrasi" element={<PelayananAdministrasiPage />} />
