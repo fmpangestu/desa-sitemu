@@ -19,6 +19,9 @@ body {
     .clip-diagonal {
       clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
     }
+    .paused{
+        animation-play-state: paused;
+    }
   }
-  
+
   

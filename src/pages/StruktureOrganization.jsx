@@ -1,102 +1,87 @@
-
 const StrukturOrganisasi = () => {
+    const data = [
+        {
+            img: '/src/assets/stucturedesa/kepala-desa.jpeg',
+            role: 'KEPALA DESA',
+            name: 'Musiyam'
+        },
+        {
+            img: '/src/assets/stucturedesa/kadus-1.jpeg',
+            role: 'KEPALA DUSUN 1',
+            name: 'Slamet Riyanto'
+        },
+        {
+            img: '/src/assets/stucturedesa/sekertaris-desa.jpeg',
+            role: 'SEKRETARIS DESA',
+            name: 'Gusin'
+        },
+        {
+            img: '/src/assets/stucturedesa/kasi-pemerintahan.jpeg',
+            role: 'KAUR PEMERINTAHAN',
+            name: 'Sunarwandi'
+        },
+        {
+            img: '/src/assets/stucturedesa/kadus-2.jpeg',
+            role: 'KEPALA DUSUN 2',
+            name: 'Mardikin'
+        },
+        {
+            img: '/src/assets/stucturedesa/kasi-pelayanan.jpeg',
+            role: 'KASI PELAYANAN',
+            name: 'Abdullah'
+        },
+        {
+            img: '/src/assets/stucturedesa/kaur-tata-usaha.jpeg',
+            role: 'KAUR TATA USAHA',
+            name: 'Ratoyo'
+        },
+        {
+            img: '/src/assets/stucturedesa/kadus-3.jpeg',
+            role: 'KEPALA DUSUN 3',
+            name: 'Muhayatin'
+        },
+        {
+            img: '/src/assets/stucturedesa/kaur-keuangan.jpeg',
+            role: 'KAUR KEUANGAN',
+            name: 'Dedy Setiawan'
+        },
+        {
+            img: '/src/assets/stucturedesa/kaur-perencanaan.jpeg',
+            role: 'KAUR PERENCANAAN',
+            name: 'Dicky Andhika'
+        },
+        {
+            img: '/src/assets/stucturedesa/kadus-4.jpeg',
+            role: 'KEPALA DUSUN 4',
+            name: 'Markuat'
+        },
+        {
+            img: '/src/assets/stucturedesa/kasi-kesejahteraan.jpeg',
+            role: 'KAUR KESEJAHTERAAN',
+            name: 'Kridangga Satriawan'
+        },
+    ];
+
     return (
-        <div className="flex flex-col items-center px-2 sm:px-4 pt-28">
-            <h1 className="font-bold mb-10 rounded-lg dark:text-black">Struktur Organisasi Kelurahan Sitemu</h1>
-            {/* Kepala Desa */}
-            <div className="flex flex-col items-center mb-10">
-                <div className="w-24 h-24 rounded-full bg-gray-400 mb-2"></div> {/* Foto Profil */}
-                <h2 className="font-bold">Kepala Desa</h2>
-                <p className="text-sm">Nama Kepala Desa</p>
-            </div>
+        <div className="flex flex-col items-center px-2 sm:px-4 pt-28 pb-10">
+            <h1 className="font-bold mb-10 rounded-lg dark:text-black uppercase">Struktur Organisasi Kelurahan Sitemu</h1>
 
-            {/* Garis Vertikal */}
-            <div className="border-l-2 border-gray-500 h-20"></div>
-
-            {/* Struktur Bawah: 3 Kolom */}
-            <div className="flex justify-between w-full max-w-4xl my-10 ">
-                {/* Kiri */}
-                <div className="flex flex-col items-center">
-                    <div className="w-20 h-20 rounded-full bg-gray-400 mb-2"></div> {/* Foto Profil */}
-                    <h3 className="font-bold">Jabatan 1</h3>
-                    <p className="text-sm">Nama Orang 1</p>
-                </div>
-                {/* Tengah */}
-                <div className="flex flex-col items-center">
-                    <div className="w-20 h-20 rounded-full bg-gray-400 mb-2"></div> {/* Foto Profil */}
-                    <h3 className="font-bold">Jabatan 2</h3>
-                    <p className="text-sm">Nama Orang 2</p>
-                </div>
-
-                {/* Kanan */}
-                <div className="flex flex-col items-center">
-                    <div className="w-20 h-20 rounded-full bg-gray-400 mb-2"></div> {/* Foto Profil */}
-                    <h3 className="font-bold">Jabatan 3</h3>
-                    <p className="text-sm">Nama Orang 3</p>
-                </div>
-            </div>
-            {/*center */}
-            <div className="border-l-2 border-gray-500 h-20"></div>
-            <div className="flex justify-between w-full max-w-4xl my-10 ">
-                {/* Kiri */}
-                <div className="flex flex-col items-center">
-                    <div className="w-20 h-20 rounded-full bg-gray-400 mb-2"></div> {/* Foto Profil */}
-                    <h3 className="font-bold">Jabatan 1</h3>
-                    <p className="text-sm">Nama Orang 1</p>
-                </div>
-                {/* Tengah */}
-                <div className="flex flex-col items-center">
-                    <div className="w-20 h-20 rounded-full bg-gray-400 mb-2"></div> {/* Foto Profil */}
-                    <h3 className="font-bold">Jabatan 2</h3>
-                    <p className="text-sm">Nama Orang 2</p>
-                </div>
-
-                {/* Kanan */}
-                <div className="flex flex-col items-center">
-                    <div className="w-20 h-20 rounded-full bg-gray-400 mb-2"></div> {/* Foto Profil */}
-                    <h3 className="font-bold">Jabatan 3</h3>
-                    <p className="text-sm">Nama Orang 3</p>
-                </div>
-            </div>
-            {/*bottom */}
-            <div className="border-l-2 border-gray-500 h-20"></div>
-            <div className="flex justify-between w-full max-w-4xl my-10">
-                {/* Kiri */}
-                <div className="flex flex-col items-center">
-                    <div className="w-20 h-20 rounded-full bg-gray-400 mb-2"></div> {/* Foto Profil */}
-                    <h3 className="font-bold">Jabatan 1</h3>
-                    <p className="text-sm">Nama Orang 1</p>
-                </div>
-                {/* Tengah */}
-                <div className="flex flex-col items-center">
-                    <div className="w-20 h-20 rounded-full bg-gray-400 mb-2"></div> {/* Foto Profil */}
-                    <h3 className="font-bold">Jabatan 2</h3>
-                    <p className="text-sm">Nama Orang 2</p>
-                </div>
-
-                {/* Kanan */}
-                <div className="flex flex-col items-center">
-                    <div className="w-20 h-20 rounded-full bg-gray-400 mb-2"></div> {/* Foto Profil */}
-                    <h3 className="font-bold">Jabatan 3</h3>
-                    <p className="text-sm">Nama Orang 3</p>
-                </div>
-            </div>
-            {/*bottom */}
-            <div className="border-l-2 border-gray-500 h-20"></div>
-            <div className="flex justify-between w-full max-w-4xl my-10">
-                {/* Kiri */}
-                <div className="flex flex-col items-center">
-                    <div className="w-20 h-20 rounded-full bg-gray-400 mb-2"></div> {/* Foto Profil */}
-                    <h3 className="font-bold">Jabatan 1</h3>
-                    <p className="text-sm">Nama Orang 1</p>
-                </div>
-            <div className="border-b-2 mb-20 sm:mb-24 border-gray-500 w-44 sm:w-96"></div>
-                {/* Kanan */}
-                <div className="flex flex-col items-center">
-                    <div className="w-20 h-20 rounded-full bg-gray-400 mb-2"></div> {/* Foto Profil */}
-                    <h3 className="font-bold">Jabatan 3</h3>
-                    <p className="text-sm">Nama Orang 3</p>
-                </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl">
+                {data.map((person, index) => (
+                    <div key={index} className="card card-side bg-base-100 shadow-xl">
+                        <figure>
+                            <img
+                                src={person.img}
+                                alt={person.name}
+                                className="h-48 w-[110px] object-cover"
+                            />
+                        </figure>
+                        <div className="card-body">
+                            <h2 className="card-title">{person.role}</h2>
+                            <p className="text-sm uppercase italic">{person.name}</p>
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     );

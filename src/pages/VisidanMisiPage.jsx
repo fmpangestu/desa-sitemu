@@ -1,5 +1,4 @@
-import { useState } from 'react';
-const filosofiData = [
+const logos = [
     { icon: '🤝', text: 'Gotong Royong' },
     { icon: '🌍', text: 'Keberagaman' },
     { icon: '🎭', text: 'Budaya' },
@@ -8,15 +7,8 @@ const filosofiData = [
 ];
 
 export default function VisidanMisi() {
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const repeatedLogos = [...logos, ...logos, ...logos];
 
-    const nextFilosofi = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % filosofiData.length);
-    };
-
-    const prevFilosofi = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + filosofiData.length) % filosofiData.length);
-    };
     return (
         <div className="relative bg-base-200 pt-16 px-4 lg:px-0 flex flex-col justify-between">
             {/* Konten Utama */}
@@ -46,11 +38,11 @@ export default function VisidanMisi() {
             </div>
 
             {/* Filosofi */}
-            <div className="hidden sm:block container  justify-center items-center mx-auto relative lg:px-40 z-10">
+            <div className="hidden xl:block container  justify-center items-center mx-auto relative lg:px-40 z-10">
                 <div className="flex justify-between gap-4">
                     <div className="flex items-center">
                         <span className="text-4xl">🤝</span>
-                        <span className="dark:text-slate-400">Gotong Royong</span>
+                        <span className="dark:text-slate-400">Layanan Masyarakat</span>
                     </div>
                     <div className="flex items-center">
                         <span className="text-4xl">🌍</span>
@@ -70,18 +62,14 @@ export default function VisidanMisi() {
                     </div>
                 </div>
             </div>
-            <div className="sm:hidden container justify-center items-center mx-auto relative lg:px-40 z-10">
-                <div className="flex justify-between items-center mb-4 ">
-                    <button onClick={prevFilosofi} className="items-center justify-center text-white text-4xl p-2 mr-2">
-                        &lt;
-                    </button>
-                    <div className="flex items-center">
-                        <span className="text-4xl">{filosofiData[currentIndex].icon}</span>
-                        <span className="text-slate-400 ml-2">{filosofiData[currentIndex].text}</span>
-                    </div>
-                    <button onClick={nextFilosofi} className="items-center justify-center text-white text-4xl p-2 mr-2">
-                        &gt;
-                    </button>
+            <div className="xl:hidden container xl:pt-20 justify-center items-center mx-auto relative lg:px-40 z-10 py-10 overflow-hidden">
+                <div className="flex justify-between gap-4 animate-loop flex-shrink-0 whitespace-nowrap">
+                    {repeatedLogos.map((logo, index) => (
+                        <div className="flex items-center" key={index}>
+                            <span className="text-4xl">{logo.icon}</span>
+                            <span className="dark:text-slate-400 ml-2">{logo.text}</span>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

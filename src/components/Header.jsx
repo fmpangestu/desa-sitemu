@@ -6,8 +6,10 @@ export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isProfileOpen, setIsProfileOpen] = useState(false);
     const [isLayananOpen, setIsLayananOpen] = useState(false);
+    const [isKelembagaanOpen, setIsKelembagaanOpen] = useState(false);
     const [profileTimeout, setProfileTimeout] = useState(null);
     const [layananTimeout, setLayananTimeout] = useState(null);
+    const [kelembagaanTimeout, setKelembagaanTimeout] = useState(null);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [darkMode, setDarkMode] = useState(false);
 
@@ -72,6 +74,16 @@ export default function Header() {
             setIsLayananOpen(false);
         }, 100));
     };
+    const handleKelembagaanMouseEnter = () => {
+        if (kelembagaanTimeout) clearTimeout(kelembagaanTimeout);
+        setIsKelembagaanOpen(true);
+    };
+
+    const handleKelembagaanMouseLeave = () => {
+        setKelembagaanTimeout(setTimeout(() => {
+            setIsKelembagaanOpen(false);
+        }, 100));
+    };
 
     const closeDropdown = () => {
         setIsDropdownOpen(false);
@@ -83,7 +95,8 @@ export default function Header() {
 
 
     return (
-        <div className={`navbar px-5 lg:px-0 fixed top-0 w-full z-50 bg-transparent transition duration-300 ${isScrolled ? 'backdrop-blur-lg shadow-md' : ''} lg:px-32`}>
+        <div className={`navbar px-5 lg:px-0 fixed top-0 w-full z-50 bg-transparent transition duration-300 ${isScrolled ? 'backdrop-blur-lg shadow-md' : ''} lg:px-32`}
+        style={{ backgroundColor: 'transparent' }}>
             <div className="navbar-start bg-transparent">
                 <div className="dropdown bg-transparent">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden" onClick={toggleDropdown}>
@@ -124,12 +137,12 @@ export default function Header() {
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/tupoksi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover-border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/tupoksi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Tupoksi
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/visi-misi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover-border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/visi-misi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Visi & Misi
                                             </NavLink>
                                         </li>
@@ -141,20 +154,68 @@ export default function Header() {
                                     <summary className='py-4'>Layanan</summary>
                                     <ul className="bg-base-200 z-[1] mt-3">
                                         <li>
-                                            <NavLink to="/layanan-administrasi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover-border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/layanan-administrasi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Pelayanan Administrasi
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/hallo-bupati" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover-border-b-2 hover-border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/hallo-bupati" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Hallo Bupati
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/layanan-pendidikan" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover-border-b-2 hover-border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/layanan-pendidikan" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Layanan Pendidikan
                                             </NavLink>
                                         </li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li className='relative' onMouseEnter={handleLayananMouseEnter} onMouseLeave={handleLayananMouseLeave}>
+                                <details>
+                                    <summary className='py-4'>Kelembagaan</summary>
+                                    <ul className="bg-base-200 z-[1] mt-3">
+                                        <li>
+                                            <NavLink to="/badan-permusyawaratan-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                                Badan Permusyawaratan Desa (BPD)
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to="/lembaga-pemberdayaan-masyarakat" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                                Lembaga Pemberdayaan Masyarakat (LPM)
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to="/pembinaan-kesejahteraan-keluarga" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                                Pembinaan Kesejahteraan Keluarga (PKK)
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to="/karang-taruna" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                                Karang Taruna
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to="/linmas-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                                Linmas Desa
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to="/kelompok-informasi-masyarakat" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                                Kelompok Informasi Masyarakat (KIM)
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to="/kelompok-sadar-wisata" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                                Kelompok Sadar Wisata (Pokdarwis)
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink to="/badan-usaha-milik-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                                Badan Usaha Milik Desa (BUMDes)
+                                            </NavLink>
+                                        </li>
+
                                     </ul>
                                 </details>
                             </li>
@@ -254,6 +315,64 @@ export default function Header() {
                             </ul>
                         )}
                     </li>
+                    <li className='relative bg-transparent' onMouseEnter={handleKelembagaanMouseEnter} onMouseLeave={handleKelembagaanMouseLeave}>
+                        <div className='flex items-center cursor-pointer !bg-transparent hover:bg-transparent hover:border-b-2 border-sky-500'>
+                            Kelembagaan
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                className={`h-4 w-4 ml-1 bg-transparent transition-transform duration-200 ${isKelembagaanOpen ? 'rotate-180' : ''}`}
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                        {isKelembagaanOpen && (
+                            <ul className="bg-base-200 z-[1] top-10 left-[-40px] shadow-3xl w-64 absolute rounded-xl">
+                                <li>
+                                    <NavLink to="/badan-permusyawaratan-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                        Badan Permusyawaratan Desa (BPD)
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/lembaga-pemberdayaan-masyarakat" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                        Lembaga Pemberdayaan Masyarakat (LPM)
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/pembinaan-kesejahteraan-keluarga" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                        Pembinaan Kesejahteraan Keluarga (PKK)
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/karang-taruna" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                        Karang Taruna
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/linmas-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                        Linmas Desa
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/kelompok-informasi-masyarakat" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                        Kelompok Informasi Masyarakat (KIM)
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/kelompok-sadar-wisata" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                        Kelompok Sadar Wisata (Pokdarwis)
+                                    </NavLink>
+                                </li>
+                                <li className='rounded-xl'>
+                                    <NavLink to="/badan-usaha-milik-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                        Badan Usaha Milik Desa (BUMDes)
+                                    </NavLink>
+                                </li>
+                            </ul>
+                        )}
+                    </li>
                     <li className='bg-transparent'>
                         <NavLink to="/kontak" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent'}>
                             Kontak
@@ -261,13 +380,14 @@ export default function Header() {
                     </li>
                 </ul>
             </div>
-            <div className="navbar-end flex items-center bg-transparent">
+            <div className="navbar-end flex items-center !bg-transparent">
                 {/* Dark mode toggle */}
-                <label className="swap swap-rotate">
-                    <input type="checkbox" checked={darkMode} onChange={toggleTheme} />
+                <label className="swap swap-rotate bg-transparent">
+                    <input type="checkbox" className="!bg-transparent !important" checked={darkMode} onChange={toggleTheme} style={{ backgroundColor: 'transparent' }}/>
                     {/* Sun icon */}
                     <svg
-                        className="swap-off h-8 w-8 fill-yellow-500"
+                        className="swap-off h-8 w-8 fill-yellow-500 !bg-transparent !important"
+                        style={{ backgroundColor: 'transparent' }}
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24">
                         <path
@@ -275,7 +395,8 @@ export default function Header() {
                     </svg>
                     {/* Moon icon (Dark Mode) */}
                     <svg
-                        className="swap-on h-8 w-8 fill-sky-500"
+                        className="swap-on h-8 w-8 fill-sky-500 !bg-transparent !important"
+                        style={{ backgroundColor: 'transparent' }}
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24">
                         <path

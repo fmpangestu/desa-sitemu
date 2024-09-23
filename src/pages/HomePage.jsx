@@ -10,13 +10,12 @@ export default function Homepage() {
                 <aside className="lg:w-1/2 p-4">
                     <h1 className="text-4xl font-bold mb-4 dark:text-white">Selamat Datang di Desa <span className='text-sky-600'>Sitemu</span></h1>
                     <p className="mb-4 dark:text-slate-400">
-                        Desa Sitemu adalah desa yang kaya akan budaya dan tradisi. Kami berkomitmen untuk
+                        Desa Sitemu suatu desa yang kaya akan budaya dan tradisi. Kami berkomitmen untuk
                         memberikan layanan terbaik bagi warga dan pengunjung. Temukan berbagai informasi
                         mengenai desa kami di sini.
                     </p>
                     <p className="mb-4 dark:text-slate-400">
-                        Kami memiliki berbagai program dan layanan untuk mendukung masyarakat. Silakan
-                        menjelajahi situs kami untuk mengetahui lebih lanjut.
+                        Kami memiliki berbagai program dan layanan untuk mendukung masyarakat.
                     </p>
                     <a className="btn hover:bg-transparent hover:border-none hover:scale-1 shadow-[1px_2px_0px_rgba(14,165,233,0.5)]">
                         <BsTelephoneFill className='bg-transparent' fill='#0ea5e9' />
@@ -29,7 +28,7 @@ export default function Homepage() {
                     <img
                         src={workingImage}
                         alt="Ilustrasi Desa Sitemu"
-                        className="w-full animate-float  "
+                        className="w-full animate-float"
                         style={{ animation: 'float 3s ease-in-out infinite' }}
                     />
                 </aside>
