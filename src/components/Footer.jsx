@@ -49,9 +49,9 @@ export default function Footer() {
                     <div className="flex items-center justify-center mb-5">
                         {/*github*/}
                         <a href="https://github.com/farhnDev"
-                            className={'h-9 w-9 mr-3 rounded-full flex  justify-center items-center dark:text-slate-300 border border-slate-300  '}
+                            className={'h-9 w-9 mr-3 rounded-full flex  justify-center items-center dark:text-slate-300 hover:scale-125  '}
                             target={"_blank"} rel="noreferrer">
-                            <svg className={'fill-current'} role="img" width={'25'} height={'25'}
+                            <svg className={'fill-sky-500'} role="img" width={'25'} height={'25'}
                                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <title>GitHub</title>
                                 <path
@@ -60,9 +60,9 @@ export default function Footer() {
                         </a>
                         {/*instagram*/}
                         <a href="https://www.instagram.com/kkn23_sitemu/"
-                            className={'h-9 w-9 mr-3 rounded-full flex  justify-center items-center dark:text-slate-300 border border-slate-300 '}
+                            className={'h-9 w-9 mr-3 rounded-full flex  justify-center items-center dark:text-slate-300 hover:scale-125 '}
                             target={"_blank"} rel="noreferrer">
-                            <svg role="img" className={'fill-current'} width={'25'} height={'25'}
+                            <svg role="img" className={'fill-sky-500'} width={'25'} height={'25'}
                                 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <title>Instagram</title>
                                 <path

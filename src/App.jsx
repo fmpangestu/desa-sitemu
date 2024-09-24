@@ -23,10 +23,18 @@ import BumdesPage from './pages/BUMDESPage';
 import Footer from './components/Footer';
 import Totop from './components/ToTop';
 import GaleriPage from './pages/GaleriPage';
+import BeritaPage from './pages/BeritaPage';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function App() {
   const [loading, setLoading] = useState(false);
   const location = useLocation(); // Monitor perubahan URL
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   useEffect(() => {
     setLoading(true); // Set loading state true saat URL berubah
@@ -43,7 +51,7 @@ function App() {
       {loading ? ( // Jika loading true, tampilkan spinner
         <LoadingSpinner />
       ) : ( // Jika loading selesai, tampilkan konten halaman
-        <>
+        <div className='overflow-x-hidden'>
           <Routes>
             <Route path="/" element={<ContentPage />} />
             <Route path="/kontak" element={<Kontak />} />
@@ -63,9 +71,10 @@ function App() {
             <Route path="/kelompok-informasi-masyarakat" element={<KIMPage />} />
             <Route path="/kelompok-swadaya-wisata" element={<POKDARWISPage />} />
             <Route path="/badan-usaha-milik-desa" element={<BumdesPage />} />
+            <Route path="/berita" element={<BeritaPage />} />
           </Routes>
-          <Footer /> 
-        </>
+          <Footer />
+        </div>
       )}
       <Totop /> {/* Tombol kembali ke atas */}
     </>

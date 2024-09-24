@@ -15,7 +15,7 @@ export default function VisidanMisi() {
 
             <div className="container mx-auto sm:pb-28 flex lg:px-32 flex-col lg:flex-row relative z-10">
                 {/* Aside Kiri: Visi */}
-                <aside className="lg:w-1/2 p-4">
+                <aside className="lg:w-1/2 p-4" data-aos="fade-right">
                     <h1 className="text-4xl font-bold mb-4 dark:text-slate-200">Visi Kabupaten Pemalang</h1>
                     <p className="mb-4 dark:text-slate-400">
                         Terwujudnya Pemalang Hebat yang berdaulat, berjati diri, mandiri dan sejahtera.
@@ -23,7 +23,7 @@ export default function VisidanMisi() {
                 </aside>
 
                 {/* Aside Kanan: Misi */}
-                <aside className="lg:w-1/2 p-4">
+                <aside className="lg:w-1/2 p-4" data-aos="fade-left">
                     <h2 className="text-4xl font-bold mb-2 text-sky-600">Misi Kabupaten Pemalang</h2>
                     <ul className="list-decimal list-inside dark:text-slate-400 space-y-2">
                         <li>Menjunjung tinggi kedaulatan rakyat melalui permusyawaratan dan perwakilan.</li>
@@ -38,7 +38,7 @@ export default function VisidanMisi() {
             </div>
 
             {/* Filosofi */}
-            <div className="hidden xl:block container  justify-center items-center mx-auto relative lg:px-40 z-10">
+            <div className="hidden xl:block container  justify-center items-center mx-auto relative lg:px-40 z-10" data-aos="zoom-in">
                 <div className="flex justify-between gap-4">
                     <div className="flex items-center">
                         <span className="text-4xl">🤝</span>

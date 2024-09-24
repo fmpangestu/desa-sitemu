@@ -113,36 +113,36 @@ export default function Header() {
                     {isDropdownOpen && (
                         <ul className="menu menu-sm dropdown-content bg-base-200 rounded-box z-[1] mt-3 w-96 sm:w-[50rem] p-2 shadow-xl">
                             <li>
-                                <NavLink to="/" className={({ isActive }) => isActive ? ' border-b-2 decoration-sky-500 py-4' : 'py-4'} onClick={closeDropdown}>
+                                <NavLink to="/" className={({ isActive }) => isActive ? '!bg-transparent border-b-2 decoration-sky-500 py-4' : 'py-4'} onClick={closeDropdown}>
                                     Beranda
                                 </NavLink>
                             </li>
                             <li className='relative' onMouseEnter={handleProfileMouseEnter} onMouseLeave={handleProfileMouseLeave}>
                                 <details>
-                                    <summary className='py-4'>Profil</summary>
+                                    <summary className='py-4 !bg-transparent'>Profil</summary>
                                     <ul className="bg-base-200 z-[1] mt-3">
                                         <li>
-                                            <NavLink to="/profil-kelurahan" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/profil-kelurahan" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Profil Kelurahan Desa
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/struktur-organisasi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/struktur-organisasi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Struktur Organisasi
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/prestasi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/prestasi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Prestasi
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/tupoksi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/tupoksi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Tupoksi
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/visi-misi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/visi-misi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Visi & Misi
                                             </NavLink>
                                         </li>
@@ -151,20 +151,20 @@ export default function Header() {
                             </li>
                             <li className='relative' onMouseEnter={handleLayananMouseEnter} onMouseLeave={handleLayananMouseLeave}>
                                 <details>
-                                    <summary className='py-4'>Layanan</summary>
+                                    <summary className='!bg-transparent py-4'>Layanan</summary>
                                     <ul className="bg-base-200 z-[1] mt-3">
                                         <li>
-                                            <NavLink to="/layanan-administrasi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/layanan-administrasi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Pelayanan Administrasi
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/hallo-bupati" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/hallo-bupati" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Hallo Bupati
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/layanan-pendidikan" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/layanan-pendidikan" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Layanan Pendidikan
                                             </NavLink>
                                         </li>
@@ -173,45 +173,45 @@ export default function Header() {
                             </li>
                             <li className='relative' onMouseEnter={handleLayananMouseEnter} onMouseLeave={handleLayananMouseLeave}>
                                 <details>
-                                    <summary className='py-4'>Kelembagaan</summary>
+                                    <summary className='!bg-transparent py-4'>Kelembagaan</summary>
                                     <ul className="bg-base-200 z-[1] mt-3">
                                         <li>
-                                            <NavLink to="/badan-permusyawaratan-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/badan-permusyawaratan-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Badan Permusyawaratan Desa (BPD)
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/lembaga-pemberdayaan-masyarakat" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/lembaga-pemberdayaan-masyarakat" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Lembaga Pemberdayaan Masyarakat (LPM)
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/pembinaan-kesejahteraan-keluarga" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/pembinaan-kesejahteraan-keluarga" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Pembinaan Kesejahteraan Keluarga (PKK)
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/karang-taruna" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/karang-taruna" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Karang Taruna
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/linmas-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/linmas-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Linmas Desa
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/kelompok-informasi-masyarakat" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/kelompok-informasi-masyarakat" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Kelompok Informasi Masyarakat (KIM)
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/kelompok-sadar-wisata" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/kelompok-sadar-wisata" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Kelompok Sadar Wisata (Pokdarwis)
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/badan-usaha-milik-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                            <NavLink to="/badan-usaha-milik-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Badan Usaha Milik Desa (BUMDes)
                                             </NavLink>
                                         </li>
@@ -220,7 +220,17 @@ export default function Header() {
                                 </details>
                             </li>
                             <li>
-                                <NavLink to="/kontak" className={({ isActive }) => isActive ? 'border-b-2 decoration-sky-500 py-4' : 'py-4'} onClick={closeDropdown}>
+                                <NavLink to="/galeri" className={({ isActive }) => isActive ? 'border-b-2 decoration-sky-500 !bg-transparent py-4' : '!bg-transparent py-4'} onClick={closeDropdown}>
+                                    Galeri
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/berita" className={({ isActive }) => isActive ? 'border-b-2 decoration-sky-500 !bg-transparent py-4' : '!bg-transparent py-4'} onClick={closeDropdown}>
+                                    Berita
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/kontak" className={({ isActive }) => isActive ? 'border-b-2 decoration-sky-500 !bg-transparent py-4' : '!bg-transparent py-4'} onClick={closeDropdown}>
                                     Kontak
                                 </NavLink>
                             </li>
@@ -376,6 +386,11 @@ export default function Header() {
                     <li className='bg-transparent'>
                         <NavLink to="/galeri" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent'}>
                             Galeri
+                        </NavLink>
+                    </li>
+                    <li className='bg-transparent'>
+                        <NavLink to="/berita" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent'}>
+                            Berita
                         </NavLink>
                     </li>
                     <li className='bg-transparent'>

@@ -1,9 +1,9 @@
 const PelayananAdministrasi = () => {
     return (
         <div className="container mx-auto py-28 px-4 sm:px-32">
-            <h1 className="text-2xl font-bold mb-6">Pelayanan Administrasi</h1>
+            <h1 className="text-2xl font-bold mb-6" data-aos="fade-right">Pelayanan Administrasi</h1>
 
-            <div className=" shadow-xl rounded-lg p-6 mb-10">
+            <div className=" shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h2 className="text-xl font-semibold mb-4">1. Surat Pengantar Kartu Keluarga (KK)</h2>
 
                 <div className="mb-4">
@@ -26,7 +26,7 @@ const PelayananAdministrasi = () => {
                 </div>
             </div>
 
-            <div className=" shadow-xl rounded-lg p-6 mb-10">
+            <div className=" shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h2 className="text-xl font-semibold mb-4">2. Surat Keterangan Kelahiran</h2>
                 <ul className="list-disc pl-6">
                     <li>Surat pengantar dari RT/RW</li>
@@ -41,7 +41,7 @@ const PelayananAdministrasi = () => {
                 </ul>
             </div>
 
-            <div className=" shadow-xl rounded-lg p-6 mb-10">
+            <div className=" shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h2 className="text-xl font-semibold mb-4">3. Surat Keterangan Kematian</h2>
                 <ul className="list-disc pl-6">
                     <li>Surat pengantar dari RT/RW</li>
@@ -54,7 +54,7 @@ const PelayananAdministrasi = () => {
                 </ul>
             </div>
 
-            <div className=" shadow-xl rounded-lg p-6 mb-10">
+            <div className=" shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h2 className="text-xl font-semibold mb-4">4. Surat Pengantar Pembuatan KTP</h2>
                 <ul className="list-disc pl-6">
                     <li>Surat pengantar dari RT/RW</li>
@@ -63,7 +63,7 @@ const PelayananAdministrasi = () => {
                 </ul>
             </div>
 
-            <div className=" shadow-xl rounded-lg p-6 mb-10">
+            <div className=" shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h2 className="text-xl font-semibold mb-4">5. Surat Pengantar Cetak Ulang KTP</h2>
                 <ul className="list-disc pl-6">
                     <li>Surat pengantar dari RT/RW</li>
@@ -72,7 +72,7 @@ const PelayananAdministrasi = () => {
                     <li>KTP yang rusak jika KTP rusak</li>
                 </ul>
             </div>
-            <div className=" shadow-xl rounded-lg p-6 mb-10">
+            <div className=" shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h2 className="text-xl font-semibold mb-4">6. Surat Pengantar SIM</h2>
                 <ul className="list-disc pl-6">
                     <li>Surat pengantar dari RT/RW</li>
@@ -81,7 +81,7 @@ const PelayananAdministrasi = () => {
                 </ul>
             </div>
 
-            <div className=" shadow-xl rounded-lg p-6 mb-10">
+            <div className=" shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h2 className="text-xl font-semibold mb-4">7. Surat Keterangan Usaha</h2>
                 <ul className="list-disc pl-6">
                     <li>Surat pengantar dari RT/RW</li>
@@ -89,7 +89,7 @@ const PelayananAdministrasi = () => {
                 </ul>
             </div>
 
-            <div className=" shadow-xl rounded-lg p-6 mb-10">
+            <div className=" shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h2 className="text-xl font-semibold mb-4">8. Surat Keterangan Tidak Mampu</h2>
                 <ul className="list-disc pl-6">
                     <li>Surat pengantar dari RT/RW</li>
@@ -98,14 +98,14 @@ const PelayananAdministrasi = () => {
                 </ul>
             </div>
 
-            <div className=" shadow-xl rounded-lg p-6 mb-10">
+            <div className=" shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h2 className="text-xl font-semibold mb-4">9. Surat-Surat Umum</h2>
                 <ul className="list-disc pl-6">
                     <li>Surat pengantar dari RT/RW</li>
                 </ul>
             </div>
 
-            <div className=" shadow-xl rounded-lg p-6 mb-10">
+            <div className=" shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h2 className="text-xl font-semibold mb-4">10. Surat Pengantar Perijinan Hajatan</h2>
                 <ul className="list-disc pl-6">
                     <li>Surat pengantar dari RT/RW</li>
@@ -113,7 +113,7 @@ const PelayananAdministrasi = () => {
                 </ul>
             </div>
 
-            <div className=" shadow-xl rounded-lg p-6 mb-10">
+            <div className=" shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h2 className="text-xl font-semibold mb-4">11. Surat Pengantar Pindah Penduduk</h2>
                 <div className="mb-4">
                     <h3 className="text-lg font-medium mb-2">11.1 Ke RT/RW lain dalam satu kelurahan</h3>
@@ -146,7 +146,7 @@ const PelayananAdministrasi = () => {
                     </ul>
                 </div>
             </div>
-            <div className="shadow-xl rounded-lg p-6 mb-10">
+            <div className="shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h3 className="text-lg font-medium mb-2">12.4 Ke kabupaten/provinsi lain</h3>
                 <ul className="list-disc pl-6">
                     <li>Surat pengantar dari RT/RW</li>
@@ -161,21 +161,21 @@ const PelayananAdministrasi = () => {
                     <li>Foto berwarna ukuran 4×6 sebanyak 6 lembar</li>
                 </ul>
             </div>
-            <div className="shadow-xl rounded-lg p-6 mb-10">
+            <div className="shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h3 className="text-lg font-medium mb-2">13. Surat Keterangan Domisili Usaha</h3>
                 <ul className="list-disc pl-6">
                     <li>Surat pengantar dari RT/RW</li>
                     <li>Fotokopi KTP atau Kartu Keluarga sebanyak 1 lembar</li>
                 </ul>
             </div>
-            <div className="shadow-xl rounded-lg p-6 mb-10">
+            <div className="shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h3 className="text-lg font-medium mb-2">14. Surat Keterangan Domisili Penduduk</h3>
                 <ul className="list-disc pl-6">
                     <li>Surat pengantar dari RT/RW</li>
                     <li>Fotokopi KTP atau Kartu Keluarga sebanyak 1 lembar</li>
                 </ul>
             </div>
-            <div className="shadow-xl rounded-lg p-6 mb-10">
+            <div className="shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h3 className="text-lg font-medium mb-2">15. Surat Keterangan Harga Taksiran Tanah</h3>
                 <ul className="list-disc pl-6">
                     <li>Fotokopi sertifikat HM sebanyak 1 bendel</li>
@@ -183,7 +183,7 @@ const PelayananAdministrasi = () => {
                     <li>Fotokopi KTP sebanyak 1 lembar</li>
                 </ul>
             </div>
-            <div className="shadow-xl rounded-lg p-6 mb-10">
+            <div className="shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h3 className="text-lg font-medium mb-2">16. Surat keterangan pernyataan wali murid</h3>
                 <ul className="list-disc pl-6">
                     <li>Surat pengantar dari RT/RW</li>
@@ -191,7 +191,7 @@ const PelayananAdministrasi = () => {
                     <li>Fotokopi kartu keluarga sebanyak 1 lembar</li>
                 </ul>
             </div>
-            <div className="shadow-xl rounded-lg p-6 mb-10">
+            <div className="shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h3 className="text-lg font-medium mb-2">17. Surat keterangan penghasilan</h3>
                 <ul className="list-disc pl-6">
                     <li>Surat pengantar dari RT/RW</li>
@@ -199,7 +199,7 @@ const PelayananAdministrasi = () => {
                     <li>Fotokopi kartu keluarga sebanyak 1 lembar</li>
                 </ul>
             </div>
-            <div className="shadow-xl rounded-lg p-6 mb-10">
+            <div className="shadow-xl rounded-lg p-6 mb-10" data-aos="fade-up">
                 <h3 className="text-lg font-medium mb-2">18. Surat pernyataan pengaktifan BPJS</h3>
                 <ul className="list-disc pl-6">
                     <li>Surat pengantar dari RT/RW</li>
