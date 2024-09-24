@@ -228,7 +228,7 @@ export default function Header() {
                     )}
                 </div>
 
-                <a className="bg-transparent border-transparent btn text-xl hover:bg-transparent hover:border-transparent shadow-none dark:text-slate-200">
+                <a href="/" className="bg-transparent border-transparent btn text-xl hover:bg-transparent hover:border-transparent shadow-none dark:text-slate-200">
                     Desa<span className="text-sky-500 ml-[-8px] bg-transparent">Sitemu</span>
                 </a>
             </div>
@@ -255,27 +255,27 @@ export default function Header() {
                         {isProfileOpen && (
                             <ul className="bg-base-200 z-[1] top-10 left-[-40px] shadow-3xl w-64 absolute rounded-xl ">
                                 <li>
-                                    <NavLink to="/profil-kelurahan" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                    <NavLink to="/profil-kelurahan" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
                                         Profil Kelurahan Sitemu
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/struktur-organisasi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                    <NavLink to="/struktur-organisasi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
                                         Struktur Organisasi
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/prestasi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                    <NavLink to="/prestasi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
                                         Prestasi
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/tupoksi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                    <NavLink to="/tupoksi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
                                         Tupoksi
                                     </NavLink>
                                 </li>
                                 <li className='rounded-lg'>
-                                    <NavLink to="/visi-misi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                    <NavLink to="/visi-misi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
                                         Visi & Misi
                                     </NavLink>
                                 </li>
@@ -283,7 +283,7 @@ export default function Header() {
                         )}
                     </li>
                     <li className='relative bg-transparent' onMouseEnter={handleLayananMouseEnter} onMouseLeave={handleLayananMouseLeave}>
-                        <div className='flex items-center cursor-pointer !bg-transparent hover:bg-transparent hover:border-b-2 border-sky-500'>
+                        <div className='flex items-center cursor-pointer hover:bg-transparent !bg-transparent hover:border-b-2 border-sky-500'>
                             Layanan
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -298,20 +298,20 @@ export default function Header() {
                         {isLayananOpen && (
                             <ul className="bg-base-200 z-[1] top-10 left-[-40px] shadow-3xl w-64 absolute rounded-xl">
                                 <li>
-                                    <NavLink to="/layanan-administrasi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                    <NavLink to="/layanan-administrasi" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
                                         Pelayanan Administrasi
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/hallo-bupati" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                    <NavLink to="/hallo-bupati" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
                                         Hallo Bupati
                                     </NavLink>
                                 </li>
-                                <li className='rounded-xl'>
-                                    <NavLink to="/layanan-pendidikan" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                {/* <li className='rounded-xl'>
+                                    <NavLink to="/layanan-pendidikan" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
                                         Layanan Pendidikan
                                     </NavLink>
-                                </li>
+                                </li> */}
                             </ul>
                         )}
                     </li>
@@ -331,47 +331,52 @@ export default function Header() {
                         {isKelembagaanOpen && (
                             <ul className="bg-base-200 z-[1] top-10 left-[-40px] shadow-3xl w-64 absolute rounded-xl">
                                 <li>
-                                    <NavLink to="/badan-permusyawaratan-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                    <NavLink to="/badan-permusyawaratan-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
                                         Badan Permusyawaratan Desa (BPD)
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/lembaga-pemberdayaan-masyarakat" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                    <NavLink to="/lembaga-pemberdayaan-masyarakat" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
                                         Lembaga Pemberdayaan Masyarakat (LPM)
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/pembinaan-kesejahteraan-keluarga" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                    <NavLink to="/pembinaan-kesejahteraan-keluarga" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
                                         Pembinaan Kesejahteraan Keluarga (PKK)
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/karang-taruna" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                    <NavLink to="/karang-taruna" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
                                         Karang Taruna
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/linmas-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
-                                        Linmas Desa
+                                    <NavLink to="/posyandu" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                        Posyandu
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/kelompok-informasi-masyarakat" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                    <NavLink to="/kelompok-informasi-masyarakat" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
                                         Kelompok Informasi Masyarakat (KIM)
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/kelompok-sadar-wisata" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                    <NavLink to="/kelompok-swadaya-wisata" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
                                         Kelompok Sadar Wisata (Pokdarwis)
                                     </NavLink>
                                 </li>
                                 <li className='rounded-xl'>
-                                    <NavLink to="/badan-usaha-milik-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : 'hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
+                                    <NavLink to="/badan-usaha-milik-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'}>
                                         Badan Usaha Milik Desa (BUMDes)
                                     </NavLink>
                                 </li>
                             </ul>
                         )}
+                    </li>
+                    <li className='bg-transparent'>
+                        <NavLink to="/galeri" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent'}>
+                            Galeri
+                        </NavLink>
                     </li>
                     <li className='bg-transparent'>
                         <NavLink to="/kontak" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent hover:border-b-2 hover:border-sky-500 hover:bg-transparent'}>

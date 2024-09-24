@@ -63,7 +63,7 @@ const StrukturOrganisasi = () => {
     ];
 
     return (
-        <div className="flex flex-col items-center px-2 sm:px-4 pt-28 pb-10">
+        <div className="flex flex-col items-center px-2 pt-28 pb-10">
             <h1 className="font-bold mb-10 rounded-lg dark:text-black uppercase">Struktur Organisasi Kelurahan Sitemu</h1>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl">
@@ -73,7 +73,7 @@ const StrukturOrganisasi = () => {
                             <img
                                 src={person.img}
                                 alt={person.name}
-                                className="h-48 w-[110px] object-cover"
+                                className="h-48 w-[110px] object-cover hover:scale-125 transition duration-300 ease-in-out cursor-pointer"
                             />
                         </figure>
                         <div className="card-body">

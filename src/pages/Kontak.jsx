@@ -1,7 +1,7 @@
 export default function Kontak() {
     return (
         <div className="container min-h-screen bg-base-200">
-            <div className="mx-auto pt-20 lg:pt-44 px-4 lg:px-36 flex flex-col lg:flex-row justify-between items-start">
+            <div className="mx-auto pt-20 lg:pt-44 px-4 sm:px-16 lg:px-36 flex flex-col lg:flex-row justify-between items-start">
                 {/* Informasi Kontak */}
                 <aside className="w-full lg:w-1/2 mb-6 lg:mb-0">
                     <h1 className="text-2xl font-bold mb-4">Kontak Kami</h1>

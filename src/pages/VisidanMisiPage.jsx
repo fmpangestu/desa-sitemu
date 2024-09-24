@@ -7,7 +7,7 @@ const logos = [
 ];
 
 export default function VisidanMisi() {
-    const repeatedLogos = [...logos, ...logos, ...logos];
+    const repeatedLogos = [...logos, ...logos, ...logos,...logos,...logos];
 
     return (
         <div className="relative bg-base-200 pt-16 px-4 lg:px-0 flex flex-col justify-between">
@@ -18,7 +18,7 @@ export default function VisidanMisi() {
                 <aside className="lg:w-1/2 p-4">
                     <h1 className="text-4xl font-bold mb-4 dark:text-slate-200">Visi Kabupaten Pemalang</h1>
                     <p className="mb-4 dark:text-slate-400">
-                        Terwujudnya Pemalang Hebat yang berdaulat, berjatidiri, mandiri dan sejahtera.
+                        Terwujudnya Pemalang Hebat yang berdaulat, berjati diri, mandiri dan sejahtera.
                     </p>
                 </aside>
 

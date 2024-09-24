@@ -12,6 +12,17 @@ import PelayananAdministrasiPage from './pages/PelayananAdministrasiPage';
 import LoadingSpinner from './components/LoadingSpinner';
 import StrukturOrganisasi from './pages/StruktureOrganization';
 import ProfilDesaPage from './pages/ProfilDesaPage';
+import BadanPermusyawaratanDesaPage from './pages/BadanPermusyawaratanDesaPage';
+import LPMPage from './pages/LPMPage';
+import LPKKPage from './pages/LPKKPage';
+import KRNGPage from './pages/KRNGPage';
+import POSYANDUPage from './pages/POSYANDUPage';
+import KIMPage from './pages/KIMPage';
+import POKDARWISPage from './pages/POKDARWISPage';
+import BumdesPage from './pages/BUMDESPage';
+import Footer from './components/Footer';
+import Totop from './components/ToTop';
+import GaleriPage from './pages/GaleriPage';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -32,19 +43,31 @@ function App() {
       {loading ? ( // Jika loading true, tampilkan spinner
         <LoadingSpinner />
       ) : ( // Jika loading selesai, tampilkan konten halaman
-        <Routes>
-          <Route path="/" element={<ContentPage />} />
-          <Route path="/kontak" element={<Kontak />} />
-          <Route path="/visi-misi" element={<VisidanMisi />} />
-          <Route path="/profil-kelurahan" element={<ProfilDesaPage />} />
-          <Route path="/struktur-organisasi" element={<StrukturOrganisasi />} />
-          <Route path="/prestasi" element={<PrestasiPage />} />
-          <Route path="/tupoksi" element={<TupoksiPage />} />
-          <Route path="/layanan-administrasi" element={<PelayananAdministrasiPage />} />
-          <Route path="/hallo-bupati" element={<HalloBupatiPage />} />
-          {/* Tambahkan route lainnya di sini */}
-        </Routes>
+        <>
+          <Routes>
+            <Route path="/" element={<ContentPage />} />
+            <Route path="/kontak" element={<Kontak />} />
+            <Route path="/galeri" element={<GaleriPage />} />
+            <Route path="/visi-misi" element={<VisidanMisi />} />
+            <Route path="/profil-kelurahan" element={<ProfilDesaPage />} />
+            <Route path="/struktur-organisasi" element={<StrukturOrganisasi />} />
+            <Route path="/prestasi" element={<PrestasiPage />} />
+            <Route path="/tupoksi" element={<TupoksiPage />} />
+            <Route path="/layanan-administrasi" element={<PelayananAdministrasiPage />} />
+            <Route path="/hallo-bupati" element={<HalloBupatiPage />} />
+            <Route path="/badan-permusyawaratan-desa" element={<BadanPermusyawaratanDesaPage />} />
+            <Route path="/lembaga-pemberdayaan-masyarakat" element={<LPMPage />} />
+            <Route path="/pembinaan-kesejahteraan-keluarga" element={<LPKKPage />} />
+            <Route path="/karang-taruna" element={<KRNGPage />} />
+            <Route path="/posyandu" element={<POSYANDUPage />} />
+            <Route path="/kelompok-informasi-masyarakat" element={<KIMPage />} />
+            <Route path="/kelompok-swadaya-wisata" element={<POKDARWISPage />} />
+            <Route path="/badan-usaha-milik-desa" element={<BumdesPage />} />
+          </Routes>
+          <Footer /> 
+        </>
       )}
+      <Totop /> {/* Tombol kembali ke atas */}
     </>
   );
 }

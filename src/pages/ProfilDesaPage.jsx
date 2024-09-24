@@ -57,12 +57,21 @@ const ProfilDesaPage = () => {
 
             {/* Section: Kesenian Utama */}
             <div className="w-full max-w-4xl mt-8 text-left">
-                <h2 className="text-2xl font-semibold mb-4">Kesenian Utama: Terbang Kencer</h2>
+                <p className="text-xl font-semibold mb-4">Terbang Kencer</p>
                 <p className="mb-4">
                     Terbang kencer adalah alat musik tradisional yang sangat dikenal di Desa Sitemu. Alat ini sering digunakan
                     dalam berbagai acara adat dan memiliki sejarah panjang yang diwariskan dari generasi ke generasi. Menurut
                     sejarah, terbang kencer pertama kali diperkenalkan oleh seseorang yang belajar seni musik di pesantren dan
                     kemudian menyebarkannya ke masyarakat setempat.
+                </p>
+            </div>
+            <div className="w-full max-w-4xl mt-8 text-left">
+                <h2 className="text-2xl font-semibold mb-4">Produk Unggulan </h2>
+                <p className="text-xl font-semibold mb-4">Telur Asin </p>
+                <p className="mb-4">
+                    Telor asin adalah Telor Bebek / Itik yang melalui proses penggaraman / pengasinan dengan menggunakan Tumbukan bata merah, tanah atau abu yang sudah dibuat menjadi adonan lalu di balut kan di luar kulit telor di diamkan selama 10 sampai 15 hari hingga rasanya asin.
+                    Untuk bisa di konsumsi telor bisa direbus, Oven , bakar atau Goreng selama 2 – 3 jam.
+                    Demikian Secara Singkat, Sejarah Desa Sitemu , Profil Desa Sitemu, dan Asal –Usul Kentongan Serta Profil Unggulan yang dapat Kami sajikan, Semoga Mendapat Gambaran bagi Semua nya.
                 </p>
             </div>
         </div>
