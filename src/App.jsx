@@ -24,6 +24,7 @@ import Footer from './components/Footer';
 import Totop from './components/ToTop';
 import GaleriPage from './pages/GaleriPage';
 import BeritaPage from './pages/BeritaPage';
+import BeritaDetailPage from './pages/BeritaDetailPage';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -72,6 +73,7 @@ function App() {
             <Route path="/kelompok-swadaya-wisata" element={<POKDARWISPage />} />
             <Route path="/badan-usaha-milik-desa" element={<BumdesPage />} />
             <Route path="/berita" element={<BeritaPage />} />
+            <Route path="/berita/:id" element={<BeritaDetailPage />} />
           </Routes>
           <Footer />
         </div>

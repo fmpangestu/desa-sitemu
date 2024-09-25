@@ -17,22 +17,31 @@ const ProfilDesaPage = () => {
 
             {/* Section: Ekonomi dan Investasi */}
             <div data-aos="fade-left" className="w-full max-w-4xl mt-8 text-left">
-                <h2 className="text-2xl font-semibold mb-4">Profil desa Sitemu</h2>
-                <p className="mb-4">
-                    Desa Sitemu desa yang terletak di perbatasan antara Kecamatan Taman dan kecamatan Petarukan, dengan batas Sebelah Utara Desa Sitemu adalah Desa Serang kecamatan Petarukan, sebelah Timur Desa Petanjungan kecamatan Petarukan, Sebelah Selatan Desa Jrakah kecamatan Taman, dan sebelah barat Desa Pedurungan kec. Taman.
-                    Terletak di ketinggian: 6 Meter di atas permukaan air laut.
-                    Luas wilayah: 298,328 HA
-                    Darat: 167,084
-                    Tanah sawah: 131,244
-                    Jumlah penduduk: 4105 Jiwa
-                    L: 2159
-                    P: 1946
-                    Jumlah KK: 1235
-                    Jumlah Dusun: 4 Rw dan 19 RT.
-                    Sebagian besar warga masyarakat Desa Sitemu sebagai petani.
-                    Alhamdulillah keadaan Desa Sitemu saat ini dalam keadaan kondusif dan aman.
-                </p>
-            </div>
+    <h2 className="text-xl font-semibold mb-6 ">Profil Desa Sitemu</h2>
+    <p className="mb-4 leading-relaxed text-lg">
+        Desa Sitemu terletak di perbatasan antara Kecamatan Taman dan Kecamatan Petarukan, dengan batas-batas wilayah sebagai berikut:
+    </p>
+    <ul className="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Utara:</strong> Desa Serang, Kecamatan Petarukan</li>
+        <li><strong>Timur:</strong> Desa Petanjungan, Kecamatan Petarukan</li>
+        <li><strong>Selatan:</strong> Desa Jrakah, Kecamatan Taman</li>
+        <li><strong>Barat:</strong> Desa Pedurungan, Kecamatan Taman</li>
+    </ul>
+    <p className="mb-4 leading-relaxed text-lg">
+        Desa Sitemu berada di ketinggian <strong>6 meter</strong> di atas permukaan laut dan memiliki luas wilayah sebesar <strong>298,328 HA</strong>, dengan rincian sebagai berikut:
+    </p>
+    <ul className="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Darat:</strong> 167,084 HA</li>
+        <li><strong>Tanah sawah:</strong> 131,244 HA</li>
+    </ul>
+    <p className="mb-4 leading-relaxed text-lg">
+        Jumlah dusun yang ada di Desa Sitemu adalah <strong>4 RW</strong> dan <strong>19 RT</strong>. Sebagian besar masyarakatnya berprofesi sebagai petani.
+    </p>
+    <p className="leading-relaxed text-lg">
+        Alhamdulillah, keadaan Desa Sitemu saat ini dalam keadaan kondusif dan aman.
+    </p>
+</div>
+
 
             {/* Section: Budaya dan Kesenian */}
             <div data-aos="fade-up" className="w-full max-w-4xl mt-8 text-left">

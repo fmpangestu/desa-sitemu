@@ -1,6 +1,7 @@
-import { useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
-const BeritaPage = () => {
+const ArticleDetail = () => {
+    const { id } = useParams();
     const navigate = useNavigate();
 
     const articles = [
@@ -27,33 +28,41 @@ const BeritaPage = () => {
         },
     ];
 
-    const handleArticleClick = (id) => {
-        navigate(`/berita/${id}`);
-    };
+    const article = articles.find((article) => article.id === parseInt(id));
+
+    if (!article) {
+        return <p>Article not found</p>;
+    }
 
     return (
-        <div className="px-4 lg:px-40 pt-24">
-            <p className="text-sm text-center">Menjelajah Kategori</p>
-            <h2 className="text-xl font-bold text-center">Berita</h2>
-            <p className="pt-10 px-4">Menampilkan {articles.length} Hasil</p>
-            <div className="md:flex gap-5  " data-aos="fade-right">
-                {articles.map((article) => (
-                    <div key={article.id} className=" w-full p-4 my-10 rounded-lg shadow hover:shadow-xl transition duration-500" data-aos="fade-right">
-                        <img src={article.image} alt="" className='w-full h-[300px] object-cover rounded-lg'/>
-                        <p className="text-md font-semibold">{article.title}</p>
-                        <p className="text-gray-500">{article.date}</p>
-                        <p>{article.content.substring(0, 100)}...</p>
-                        <button
-                            className="text-blue-500 mt-2"
-                            onClick={() => handleArticleClick(article.id)}
-                        >
-                            Lanjut Baca Selengkapnya
-                        </button>
-                    </div>
-                ))}
+        <>
+            <div className="flex flex-col px-4 lg:px-40 pt-24 w-full">
+                <h1 className="text-3xl font-bold mb-8" data-aos="fade-down">{article.title}</h1>
+                <p className="text-gray-500 mb-4" data-aos="fade-up">{article.date}</p>
+
+                {/* Flex container for the image and content */}
+                <div className="flex flex-col lg:flex-row gap-8">
+                    {/* Left side: Image */}
+                    <aside className="w-full lg:w-1/2 pt-2" data-aos="fade-right">
+                        <img src={article.image} alt={article.title} className="w-full h-auto object-cover rounded-lg" />
+                    </aside>
+
+                    {/* Right side: Article details */}
+                    <aside className="w-full lg:w-1/2" data-aos="fade-left">
+                        <p className="leading-relaxed text-justify">{article.content}</p>
+                    </aside>
+                </div>
+                <button
+                    className=" mt-5 py-2 px-4 bg-sky-500 text-white rounded hover:scale-95 duration-500 font-bold"
+                    onClick={() => navigate('/berita')}
+                    data-aos="fade-up"
+                >
+                    ⬅️ Kembali
+                </button>
             </div>
-        </div>
+        </>
+
     );
 };
 
-export default BeritaPage;
+export default ArticleDetail;
