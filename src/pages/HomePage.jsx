@@ -2,7 +2,7 @@ import { BsTelephoneFill } from 'react-icons/bs';
 import workingImage from '../assets/homepage/undraw_working_re_ddwy.svg';
 
 export default function Homepage() {
-    const whatsappNumber = '083866398265'; // Replace with your actual WhatsApp number
+    const whatsappNumber = '+6283866398265'; // Replace with your actual WhatsApp number
 
     return (
         <div className="relative bg-base-200 pb-28 flex flex-col justify-between">

@@ -1,62 +1,74 @@
+import kepalaDesaImg from '../assets/stucturedesa/kepala-desa.jpeg';
+import kadus1Img from '../assets/stucturedesa/kadus-1.jpeg';
+import sekertarisDesaImg from '../assets/stucturedesa/sekertaris-desa.jpeg';
+import kasiPemerintahanImg from '../assets/stucturedesa/kasi-pemerintahan.jpeg';
+import kadus2Img from '../assets/stucturedesa/kadus-2.jpeg';
+import kasiPelayananImg from '../assets/stucturedesa/kasi-pelayanan.jpeg';
+import kaurTataUsahaImg from '../assets/stucturedesa/kaur-tata-usaha.jpeg';
+import kadus3Img from '../assets/stucturedesa/kadus-3.jpeg';
+import kaurKeuanganImg from '../assets/stucturedesa/kaur-keuangan.jpeg';
+import kaurPerencanaanImg from '../assets/stucturedesa/kaur-perencanaan.jpeg';
+import kadus4Img from '../assets/stucturedesa/kadus-4.jpeg';
+import kasiKesejahteraanImg from '../assets/stucturedesa/kasi-kesejahteraan.jpeg';
 const StrukturOrganisasi = () => {
     const data = [
         {
-            img: '/src/assets/stucturedesa/kepala-desa.jpeg',
+            img: kepalaDesaImg,
             role: 'KEPALA DESA',
             name: 'Musiyam'
         },
         {
-            img: '/src/assets/stucturedesa/kadus-1.jpeg',
+            img: kadus1Img,
             role: 'KEPALA DUSUN 1',
             name: 'Slamet Riyanto'
         },
         {
-            img: '/src/assets/stucturedesa/sekertaris-desa.jpeg',
+            img: sekertarisDesaImg,
             role: 'SEKRETARIS DESA',
             name: 'Gusin'
         },
         {
-            img: '/src/assets/stucturedesa/kasi-pemerintahan.jpeg',
+            img: kasiPemerintahanImg,
             role: 'KAUR PEMERINTAHAN',
             name: 'Sunarwandi'
         },
         {
-            img: '/src/assets/stucturedesa/kadus-2.jpeg',
+            img: kadus2Img,
             role: 'KEPALA DUSUN 2',
             name: 'Mardikin'
         },
         {
-            img: '/src/assets/stucturedesa/kasi-pelayanan.jpeg',
+            img: kasiPelayananImg,
             role: 'KASI PELAYANAN',
             name: 'Abdullah'
         },
         {
-            img: '/src/assets/stucturedesa/kaur-tata-usaha.jpeg',
+            img: kaurTataUsahaImg,
             role: 'KAUR TATA USAHA',
             name: 'Ratoyo'
         },
         {
-            img: '/src/assets/stucturedesa/kadus-3.jpeg',
+            img: kadus3Img,
             role: 'KEPALA DUSUN 3',
             name: 'Muhayatin'
         },
         {
-            img: '/src/assets/stucturedesa/kaur-keuangan.jpeg',
+            img: kaurKeuanganImg,
             role: 'KAUR KEUANGAN',
             name: 'Dedy Setiawan'
         },
         {
-            img: '/src/assets/stucturedesa/kaur-perencanaan.jpeg',
+            img: kaurPerencanaanImg,
             role: 'KAUR PERENCANAAN',
             name: 'Dicky Andhika'
         },
         {
-            img: '/src/assets/stucturedesa/kadus-4.jpeg',
+            img: kadus4Img,
             role: 'KEPALA DUSUN 4',
             name: 'Markuat'
         },
         {
-            img: '/src/assets/stucturedesa/kasi-kesejahteraan.jpeg',
+            img: kasiKesejahteraanImg,
             role: 'KAUR KESEJAHTERAAN',
             name: 'Kridangga Satriawan'
         },

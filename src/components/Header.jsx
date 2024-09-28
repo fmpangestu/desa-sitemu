@@ -163,11 +163,11 @@ export default function Header() {
                                                 Hallo Bupati
                                             </NavLink>
                                         </li>
-                                        <li>
+                                        {/* <li>
                                             <NavLink to="/layanan-pendidikan" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
                                                 Layanan Pendidikan
                                             </NavLink>
-                                        </li>
+                                        </li> */}
                                     </ul>
                                 </details>
                             </li>
@@ -196,8 +196,8 @@ export default function Header() {
                                             </NavLink>
                                         </li>
                                         <li>
-                                            <NavLink to="/linmas-desa" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
-                                                Linmas Desa
+                                            <NavLink to="/posyandu" className={({ isActive }) => isActive ? 'border-b-2 border-sky-500 !bg-transparent' : '!bg-transparent py-4 hover:border-b-2 hover:border-sky-500 hover:bg-transparent transition duration-300'} onClick={closeDropdown}>
+                                                Posyandu
                                             </NavLink>
                                         </li>
                                         <li>

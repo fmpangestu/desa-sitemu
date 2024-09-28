@@ -1,28 +1,49 @@
 import { useState } from 'react';
+import galeri1 from '../assets/galeri/1.jpeg';
+import galeri2 from '../assets/galeri/2.jpeg';
+import galeri3 from '../assets/galeri/3.jpeg';
+import galeri4 from '../assets/galeri/4.jpeg';
+import galeri5 from '../assets/galeri/5.jpeg';
+import galeri6 from '../assets/galeri/6.jpeg';
+import galeri7 from '../assets/galeri/7.jpeg';
+import galeri8 from '../assets/galeri/8.jpeg';
+import galeri9 from '../assets/galeri/9.jpeg';
+import galeri10 from '../assets/galeri/10.jpeg';
+import galeri11 from '../assets/galeri/11.jpeg';
+import galeri12 from '../assets/galeri/12.jpeg';
+import galeri13 from '../assets/galeri/13.jpeg';
+import galeri14 from '../assets/galeri/14.jpeg';
+import galeri15 from '../assets/galeri/15.jpeg';
+import galeri16 from '../assets/galeri/16.jpeg';
+import galeri17 from '../assets/galeri/17.jpeg';
+import galeri18 from '../assets/galeri/18.jpeg';
+import prestasi1 from '../assets/berita/prestasi/WhatsApp Image 2024-09-24 at 6.29.35 PM.jpeg';
+import prestasi2 from '../assets/berita/prestasi/WhatsApp Image 2024-09-24 at 6.30.18 PM.jpeg';
+import prestasi3 from '../assets/berita/prestasi/WhatsApp Image 2024-09-24 at 6.30.47 PM.jpeg';
 
 const GaleriPage = () => {
     const [fotoKegiatan] = useState([
-        { id: 1, judul: 'Kelas Ibu Balita', foto: '/src/assets/galeri/1.jpeg', kategori: ['Posyandu', 'KKNT-UAA'] },
-        { id: 2, judul: 'Pemberian Makanan Tambahan dengan Ibu PKK', foto: '/src/assets/galeri/2.jpeg', kategori: ['PKK'] },
-        { id: 3, judul: 'Pagelaran Wayang Golek', foto: '/src/assets/galeri/3.jpeg', kategori: ['PKK', 'KKNT-UAA'] },
-        { id: 4, judul: 'Sosialisasi Pengembangan Digital UMKM DUSUN GUCI', foto: '/src/assets/galeri/4.jpeg', kategori: ['PKK', 'KKNT-UAA'] },
-        { id: 5, judul: 'Bimbingan belajar anak SD', foto: '/src/assets/galeri/5.jpeg', kategori: ['KKNT-UAA'] },
-        { id: 6, judul: 'Pemberian Makanan Tambahan dengan Ibu PKK', foto: '/src/assets/galeri/6.jpeg', kategori: ['KKNT-UAA', 'PKK'] },
-        { id: 7, judul: 'Sosialisasi Pengembangan Digital UMKM DUSUN KARANG WULUH', foto: '/src/assets/galeri/7.jpeg', kategori: ['KKNT-UAA', 'PKK'] },
-        { id: 8, judul: 'Hadiah Tercepat Pelunasan PBB P2 KECAMATAN TAMAN', foto: '/src/assets/berita/prestasi/WhatsApp Image 2024-09-24 at 6.29.35 PM.jpeg', kategori: ['Prestasi'] },
-        { id: 9, judul: 'Tercepat Pertama KONTRIBUSI PBB DESA/KELURAHAN', foto: '/src/assets/berita/prestasi/WhatsApp Image 2024-09-24 at 6.30.18 PM.jpeg', kategori: ['Prestasi'] },
-        { id: 10, judul: 'Stop Bullying', foto: '/src/assets/galeri/8.jpeg', kategori: ['Posyandu'] },
-        { id: 11, judul: 'Sosialisasi Pengembangan Digital UMKM DUSUN SITEMU', foto: '/src/assets/galeri/9.jpeg', kategori: ['KKNT-UAA'] },
-        { id: 12, judul: 'Kelas Ibu Balita', foto: '/src/assets/galeri/10.jpeg', kategori: ['Posyandu', 'PKK'] },
-        { id: 13, judul: 'SENAM STUNTING', foto: '/src/assets/galeri/11.jpeg', kategori: ['KKNT-UAA', 'PKK'] },
-        { id: 14, judul: 'PHBS Di Sekolah Dasar 02', foto: '/src/assets/galeri/12.jpeg', kategori: ['KKNT-UAA'] },
-        { id: 15, judul: 'PHBS Di Sekolah Dasar 01', foto: '/src/assets/galeri/13.jpeg', kategori: ['KKNT-UAA'] },
-        { id: 16, judul: 'POSYANDU DI DUSUN KARANG WULUH', foto: '/src/assets/galeri/14.jpeg', kategori: ['KKNT-UAA', 'PKK'] },
-        { id: 17, judul: 'LOMBA 17 AGUSTUS DI DESA SITEMU', foto: '/src/assets/galeri/15.jpeg', kategori: ['KKNT-UAA', 'PKK'] },
-        { id: 18, judul: 'JUARA 1 LOMBA 17 AGUSTUS BOLA IBU IBU ', foto: '/src/assets/galeri/16.jpeg', kategori: ['KKNT-UAA'] },
-        { id: 19, judul: 'PENGECATAN GAPURA DI 4 DUSUN DESA SITEMU', foto: '/src/assets/galeri/17.jpeg', kategori: ['KKNT-UAA', 'PKK'] },
-        { id: 20, judul: 'FOTO BERSAMA PERANGKAT DAN KADER PKK', foto: '/src/assets/galeri/18.jpeg', kategori: ['PKK', 'KKNT-UAA'] },
-        { id: 21, judul: 'Hadiah Tercepatan Pertama Pelunasan PBB KECAMATAN', foto: '/src/assets/berita/prestasi/WhatsApp Image 2024-09-24 at 6.30.47 PM.jpeg', kategori: ['Prestasi'] },
+        { id: 1, judul: 'Kelas Ibu Balita', foto: galeri1, kategori: ['Posyandu', 'KKNT-UAA'] },
+        { id: 2, judul: 'Pemberian Makanan Tambahan dengan Ibu PKK', foto: galeri2, kategori: ['PKK'] },
+        { id: 3, judul: 'Pagelaran Wayang Golek', foto: galeri3, kategori: ['PKK', 'KKNT-UAA'] },
+        { id: 4, judul: 'Sosialisasi Pengembangan Digital UMKM DUSUN GUCI', foto: galeri4, kategori: ['PKK', 'KKNT-UAA'] },
+        { id: 5, judul: 'Bimbingan belajar anak SD', foto: galeri5, kategori: ['KKNT-UAA'] },
+        { id: 6, judul: 'Pemberian Makanan Tambahan dengan Ibu PKK', foto: galeri6, kategori: ['KKNT-UAA', 'PKK'] },
+        { id: 7, judul: 'Sosialisasi Pengembangan Digital UMKM DUSUN KARANG WULUH', foto: galeri7, kategori: ['KKNT-UAA', 'PKK'] },
+        { id: 8, judul: 'Hadiah Tercepat Pelunasan PBB P2 KECAMATAN TAMAN', foto: prestasi1, kategori: ['Prestasi'] },
+        { id: 9, judul: 'Tercepat Pertama KONTRIBUSI PBB DESA/KELURAHAN', foto: prestasi2, kategori: ['Prestasi'] },
+        { id: 10, judul: 'Stop Bullying', foto: galeri8, kategori: ['Posyandu'] },
+        { id: 11, judul: 'Sosialisasi Pengembangan Digital UMKM DUSUN SITEMU', foto: galeri9, kategori: ['KKNT-UAA'] },
+        { id: 12, judul: 'Kelas Ibu Balita', foto: galeri10, kategori: ['Posyandu', 'PKK'] },
+        { id: 13, judul: 'SENAM STUNTING', foto: galeri11, kategori: ['KKNT-UAA', 'PKK'] },
+        { id: 14, judul: 'PHBS Di Sekolah Dasar 02', foto: galeri12, kategori: ['KKNT-UAA'] },
+        { id: 15, judul: 'PHBS Di Sekolah Dasar 01', foto: galeri13, kategori: ['KKNT-UAA'] },
+        { id: 16, judul: 'POSYANDU DI DUSUN KARANG WULUH', foto: galeri14, kategori: ['KKNT-UAA', 'PKK'] },
+        { id: 17, judul: 'LOMBA 17 AGUSTUS DI DESA SITEMU', foto: galeri15, kategori: ['KKNT-UAA', 'PKK'] },
+        { id: 18, judul: 'JUARA 1 LOMBA 17 AGUSTUS BOLA IBU IBU ', foto: galeri16, kategori: ['KKNT-UAA'] },
+        { id: 19, judul: 'PENGECATAN GAPURA DI 4 DUSUN DESA SITEMU', foto: galeri17, kategori: ['KKNT-UAA', 'PKK'] },
+        { id: 20, judul: 'FOTO BERSAMA PERANGKAT DAN KADER PKK', foto: galeri18, kategori: ['PKK', 'KKNT-UAA'] },
+        { id: 21, judul: 'Hadiah Tercepatan Pertama Pelunasan PBB KECAMATAN', foto: prestasi3, kategori: ['Prestasi'] },
     ]);
     
 
